@@ -1,0 +1,57 @@
+.outside {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+body {
+  height: 100%;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+#in {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgb(255, 97, 123);
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.left {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 40px;
+}
+.top {
+  position: absolute;
+  top: 0%;
+  width: 84%;
+  left: 8%;
+  height: 40px;
+}
+.bottom {
+  position: absolute;
+  bottom: 0%;
+  width: 84%;
+  left: 8%;
+  height: 40px;
+}
+.right {
+  position: absolute;
+  right: 0%;
+  height: 100%;
+  width: 40px;
+}
+button {
+  background-color: rgb(160, 156, 156);
+}
+button:active {
+  border: 2px solid rgb(67, 67, 241);
+  border-color: rgb(125, 125, 238);
+}

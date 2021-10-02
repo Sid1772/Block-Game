@@ -11,6 +11,16 @@ html {
   min-height: 100%;
   position: relative;
 }
+.instructions{
+  position: absolute;
+  top: 30%;
+  word-wrap: break-word;
+  width: 300px;
+  left: 20%;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.4;
+}
 
 #in {
   width: 50px;

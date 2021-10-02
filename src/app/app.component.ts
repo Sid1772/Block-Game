@@ -3,7 +3,7 @@ import { Component, OnInit, VERSION } from '@angular/core';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   direction = '';
@@ -16,7 +16,7 @@ export class AppComponent {
   }
   constructor() {
     clearInterval(this.int);
-    document.addEventListener('keydown', event => {
+    document.addEventListener('keydown', (event) => {
       console.log(event.key);
       switch (event.key) {
         case 'ArrowDown':
@@ -38,8 +38,12 @@ export class AppComponent {
   }
   stop() {
     clearInterval(this.int);
+    let el = document.getElementById('instructions');
+    el.style.display = 'block';
   }
   move(direction) {
+    let el = document.getElementById('instructions');
+    el.style.display = 'none';
     let doc = document.getElementById('in');
     let style = getComputedStyle(doc);
     var position = doc.getBoundingClientRect();
